@@ -1,0 +1,36 @@
+y14 XOR x14 -> ttd
+nhg XOR ttd -> vss
+tfw OR cgt -> z14
+vss z14
+
+y22 AND x22 -> kdh
+y22 XOR x22 -> hjf
+kdh hjf
+
+x31 XOR y31 -> nrr
+nrr AND sms -> z31
+nrr XOR sms -> kpp
+kpp z31
+
+y35 AND x35 -> z35
+y35 XOR x35 -> bbc
+bbc XOR jkb -> sgj
+sgj z35
+
+
+res: hjf,kdh,kpp,sgj,vss,z14,z31,z35
+
+
+x[i] -----+-----------+
+          |           |
+           > XOR --+   > AND -+
+          |        |  |       |
+y[i] -----+--------|--+        > OR ------> carry[i]
+                   |          |
+                   +--+-------|--+
+                      |       |  |
+                       > AND -+   > XOR --> z[i]
+                      |          |
+carry[i-1] -----------+----------+
+
+Watch at your own risk: https://www.youtube.com/watch?v=BoQMKlN1nXM
